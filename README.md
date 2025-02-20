@@ -4,9 +4,22 @@ Ejercicio 1
 
 a)
 ``` Python
-lista_cuadrados = list(map(lambda x: (x, x**2), range(1, 101)))
-for numero, cuadrado in lista_cuadrados:
-    print(f"{numero}: {cuadrado}")
+def Impares():
+    impares = [num for num in range(1, 1000) if num % 2 != 0]
+    return impares
+
+def Pares():
+    pares = [num for num in range(2, 1001) if num % 2 == 0]
+    return pares
+
+if __name__ == "__main__":
+    # Imprimimos los números impares
+    print("Números impares:")
+    print(Impares())
+    
+    # Imprimimos los números pares
+    print("Números pares:")
+    print(Pares())
 ```
 b)
 ```Python
@@ -42,19 +55,67 @@ if __name__=="__main__":
 Ejercicio 2
 a)
 ```Python
+def Impares(*args):
+    impares = [num for num in args if num % 2 != 0]
+    return impares
 
+def Pares(*args):
+    pares = [num for num in args if num % 2 == 0]
+    return pares
+
+if __name__ == "__main__":
+    # Generamos los números del 1 al 1000
+    numeros = list(range(1, 1001))
+    
+    # Imprimimos los números impares
+    print("Números impares:")
+    print(Impares(*numeros))
+    
+    # Imprimimos los números pares
+    print("Números pares:")
+    print(Pares(*numeros))
 ```
 
 b)
 ```Python
+import math
 
+def print_factorials(*args):
+    for num in args:
+        print(f"{num}! = {math.factorial(num)}")
+
+if __name__ == "__main__":
+    # Se evalua que el numero ingresado sea mayor o igual a 2
+    while True:   
+        n = int(input("Ingrese un numero mayor a 2:"))
+        if n >= 2:
+            break
+        else:
+            print("Ingrese un numero mayor a 2:")
+
+    # Generar una lista de números de 1 a n
+    numbers = list(range(1, n + 1))
+    
+    # Imprimir los números y sus factoriales
+    print_factorials(*numbers)
 ```
 
-c)
-```Python
-
-```
 Ejercicio 3
 ```Python
+def potencia(base, exponente):
+    # Caso base: cualquier número elevado a la potencia de 0 es 1
+    if exponente == 0:
+        return 1
+    # Caso recursivo: multiplicar la base por la potencia de la base con el exponente reducido en 1
+    else:
+        return base * potencia(base, exponente-1)
 
+if __name__ == "__main__":
+  # Se ingresa la base
+  a = int(input("Ingrese la base:"))
+  # Se ingresa la potencia
+  b = int(input("Ingrese el exponente al cual va a elevar la base:"))
+  # Se llama la funcion 
+  resultado = potencia(a, b)
+  print(resultado)  
 ```
