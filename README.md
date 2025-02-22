@@ -122,5 +122,4 @@ if __name__ == "__main__":
 Stackoverflow
 ![image](https://github.com/user-attachments/assets/1715562a-d336-4ccf-97de-151bd36e7b4f)
 linkedin
-![Captura de pantalla 2025-02-21 234051](https://github.com/user-attachments/assets/9716015b-894c-4677-8e18-ba7f96e1a28e)
-
+![image](https://github.com/user-attachments/assets/6c437dec-17fc-4bff-aeb8-4d99568a1970)
