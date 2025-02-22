@@ -119,3 +119,8 @@ if __name__ == "__main__":
   resultado = potencia(a, b)
   print(resultado)  
 ```
+Stackoverflow
+![image](https://github.com/user-attachments/assets/1715562a-d336-4ccf-97de-151bd36e7b4f)
+linkedin
+![Captura de pantalla 2025-02-21 234051](https://github.com/user-attachments/assets/9716015b-894c-4677-8e18-ba7f96e1a28e)
+
